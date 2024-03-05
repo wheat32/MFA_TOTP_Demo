@@ -48,7 +48,7 @@ namespace MFATest
                 while (true)
                 {
                     Totp totp = new Totp(secretKey);
-                    string totpCode = totp.ComputeTotp();
+                    String totpCode = totp.ComputeTotp();
                     Console.WriteLine($"Generated TOTP: {totpCode}");
 
                     // Wait for 30 seconds
@@ -60,7 +60,7 @@ namespace MFATest
             while (true)
             {
                 Console.Write("Enter the TOTP: ");
-                string userInput = Console.ReadLine()!;
+                String userInput = Console.ReadLine()!;
 
                 Totp validator = new Totp(secretKey);
                 if (validator.VerifyTotp(userInput, out long timeWindowUsed))
