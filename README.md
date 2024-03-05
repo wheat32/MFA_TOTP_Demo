@@ -2,9 +2,9 @@
 This is a simple console application that demonstrates the use of Multi-Factor Authentication (MFA) using Time-based One-Time Passwords (TOTP) and QR codes.
 ## Dependencies
 The project uses the following NuGet packages:
-•	Otp.NET: A .NET library for generating and validating One-Time Passwords (OTP).
-•	QRCoder: A pure C# open source QR Code implementation.
-•	SixLabors.ImageSharp: A cross-platform library for the processing of image files.
+-	Otp.NET: A .NET library for generating and validating One-Time Passwords (OTP).
+-	QRCoder: A pure C# open source QR Code implementation.
+-	SixLabors.ImageSharp: A cross-platform library for the processing of image files.
 ## How it works
 The application performs the following steps:
 1.	Generates a random secret key.
